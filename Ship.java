@@ -1,5 +1,6 @@
 public class Ship
 {
+
     public static final int UNSET = -1;
     public static final int HORIZONTAL = 0;
     public static final int VERTICAL = 1;
@@ -19,7 +20,7 @@ public class Ship
     // Has the location been initialized
     public boolean isLocationSet()
     {
-        if(row != 0 && col != 0)
+        if(row != UNSET && col != UNSET)
         {
             return true;
         }
@@ -31,7 +32,7 @@ public class Ship
     // Has the direction been initialized
     public boolean isDirectionSet()
     {
-        if(direction != -1)
+        if(direction != UNSET)
         {
             return true;
             
@@ -95,4 +96,5 @@ public class Ship
     {
         return "Row: " + getRow() + ". Col: " + getCol() + ". Direction: " + directionToString() + ". Length: " + getLength() + ".";
     }
+
 }
