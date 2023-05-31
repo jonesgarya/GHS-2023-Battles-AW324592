@@ -10,14 +10,14 @@ public class Location
     // Location constructor. 
     public Location()
     {
-        status = UNGUESSED;
-        ship = false;
+        setStatus(0);
+        setShip(false);
     }
     
     // Was this Location a hit?
     public boolean checkHit()
     {
-        if(getStatus() == 1)
+        if(hasShip())
         {
             return true;
         }
@@ -30,7 +30,7 @@ public class Location
     // Was this location a miss?
     public boolean checkMiss()
     {
-        if(getStatus() == 2)
+        if(!hasShip())
         {
             return true;
         }
