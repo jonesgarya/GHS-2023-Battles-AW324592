@@ -10,8 +10,8 @@ public class Location
     // Location constructor. 
     public Location()
     {
-        status = UNGUESSED;
-        ship = false;
+        setStatus(0);
+        setShip(false);
     }
     
     // Was this Location a hit?
