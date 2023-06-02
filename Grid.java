@@ -22,6 +22,8 @@ public class Grid
         }
     }
     
+    
+    
     // Mark a hit in this location by calling the markHit method
     // on the Location object.  
     public void markHit(int row, int col)
